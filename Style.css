@@ -27,7 +27,7 @@ body {
   background-color: #ededed;
   padding: 10px;
   transition: all 0.2s;
-  margin: 80px 60px;
+  margin: 90px 60px;
 }
 .profile img {
   width: 100%;
@@ -78,7 +78,7 @@ body {
 }
 /********************************* NOM&PRENOM ****************************/
 #NOM {
-  margin-top: 70px;
+  margin-top: 100px;
   margin-left: 5px;
   color: rgb(220, 210, 210);
 }
@@ -93,19 +93,21 @@ body {
 }
 /********************************* section1:Profil ****************************/
 #section1 {
-  width: 35%;
+  width: 40%;
+  height: 260vh;
   box-sizing: border-box;
   display: inline-block;
-  background-color: #ededed;
   text-align: left;
   padding-left: 30px;
-  
+  background-color:#ededed ;
+  vertical-align: bottom;
+  border-right: 2px solid rgb(209, 133, 26);
 }
 #profil {
   width: 90%;
-  height: 45vh;
-  margin-top: 15px;
-  padding: 8px;
+  height: 50vh;
+  margin-top: 50px;
+  padding: 5px;
   box-sizing: border-box;
   position: relative;
 }
@@ -149,8 +151,8 @@ body {
 /********************************* section1:Langues ****************************/
 #langue {
   width: 90%;
-  height: 100%;
-  margin-top: 50px;
+  height: 80vh;
+  margin-top: 55px;
   box-sizing: border-box;
   position: relative;
 }
@@ -251,8 +253,8 @@ body {
 /********************************* section1:Centres D'intérêts ****************************/
 #interet {
   width: 90%;
-  height: 100%;
-  margin-top: 85px;
+  height: 95vh;
+  margin-top: 60px;
   box-sizing: border-box;
   position: relative;
   padding: 5px 15px;
@@ -260,6 +262,7 @@ body {
 #interet:hover {
   box-shadow: 0 0 10px gray;
   transform: translateY(-5%);
+  height: 100vh;
 }
 #interet::before {
   content: "";
@@ -304,7 +307,8 @@ body {
 }
 /*************************** section2:Parcour **************************/
 #section2 {
-    width: 65%;
+    width: 60%;
+    height: 80vh;
     box-sizing: border-box;
     display: inline-block;
     background-color:white;
@@ -312,11 +316,12 @@ body {
     padding: 0px 40px;
     float: right;
     vertical-align: bottom;
+    
   }
   #parcour {
     width: 100%;
-    height: 65vh;
-    margin-top: 20px;
+    height: 70vh;
+    margin-top: 50px;
     padding: 8px;
     box-sizing: border-box;
     position: relative;
@@ -365,11 +370,12 @@ body {
   /*************************** section2:experience **************************/
   #experience {
     width: 100%;
-    height: 65vh;
-    margin-top: 45px;
+    height: 60vh;
+    margin-top: 50px;
     padding: 8px;
     box-sizing: border-box;
     position: relative;
+    
   }
   #experience:hover {
     box-shadow: 0 0 10px gray;
@@ -392,7 +398,7 @@ body {
   }
   #experience h2 {
     color: rgb(82, 82, 82);
-    margin: 35px 10px;
+    margin: 20px 10px;
     padding-left: 15px;
   }
   #experience h2::after {
@@ -418,7 +424,7 @@ body {
   /*************************** section2:personnelle **************************/
   #personnelles {
     width: 90%;
-    height: 100%;
+    height: 45vh;
     margin-top: 50px;
     padding: 5px 15px;
     box-sizing: border-box;
@@ -468,9 +474,9 @@ body {
    /*************************** section2:Skills **************************/
    #skills {
     width: 90%;
-    height: 100%;
+    height: 45vh;
     margin-top: 50px;
-    padding: 5px 15px;
+    padding: 2px 15px;
     box-sizing: border-box;
     position: relative;
   }
@@ -514,20 +520,17 @@ body {
     font-size: 20px;
     margin: 30px 5px;
   }
-   /*************************** section2:coordonnees**************************/
+   /*************************** section3:coordonnees**************************/
    #coordonnees {
-    width: 90%;
-    height: 100%;
-    margin-top: 50px;
+    width: 100%;
+    height: 35vh;
+    margin-left: 40px;
     padding: 5px 0px;
     box-sizing: border-box;
     position: relative;
     
   }
-  #coordonnees:hover {
-    box-shadow: 0 0 10px gray;
-    transform: translateY(-5%);
-  }
+  
   #coordonnees::before {
     content: "";
     position: absolute;
@@ -543,10 +546,12 @@ body {
       left: 0%;
     }
   }
-  
+  #section3{
+    background-color:rgb(209, 133, 26) ;
+  }
   #coordonnees h2 {
     color: rgb(82, 82, 82);
-    margin: 25px 15px;
+    margin: 5px 15px;
     padding-top: 15px;
   }
   #coordonnees h2::after {
@@ -558,20 +563,20 @@ body {
     display: block;
   }
   #coordonnees h2 > i {
-    color: rgb(209, 133, 26);
+    color: white;
   }
   #coordonnees h3{
-    color: gray;
+    color: rgba(0, 0, 0, 0.777);
     font-size: 15px;
-    margin: 30px 5px;
+    margin: 10px 5px;
   }
   #coordonnees a{
   text-decoration:none;
-  
+  color:rgba(0, 0, 0, 0.777);
   }
   #coordonnees span{
-   color: rgb(209, 133, 26); 
+   color: white; 
   }
   #coordonnees i{
-    color: rgb(209, 133, 26);
+    color: white;
   }
