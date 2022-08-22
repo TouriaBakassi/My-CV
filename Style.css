@@ -27,7 +27,7 @@ body {
   background-color: #ededed;
   padding: 10px;
   transition: all 0.2s;
-  margin: 65px 60px;
+  margin: 80px 60px;
 }
 .profile img {
   width: 100%;
@@ -78,15 +78,18 @@ body {
 }
 /********************************* NOM&PRENOM ****************************/
 #NOM {
-  margin-top: 80px;
-  margin-left: 10px;
+  margin-top: 70px;
+  margin-left: 5px;
   color: rgb(220, 210, 210);
 }
 #NOM h1 {
   font-size: 40px;
   font-weight: 700;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   color: #ededed;
+}
+#NOM p{
+  font-size: 28px;
 }
 /********************************* section1:Profil ****************************/
 #section1 {
@@ -96,6 +99,7 @@ body {
   background-color: #ededed;
   text-align: left;
   padding-left: 30px;
+  
 }
 #profil {
   width: 90%;
@@ -114,7 +118,7 @@ body {
   position: absolute;
   inset: -15px;
   border-bottom: 5px solid gray;
-  animation: To-Right 2s linear infinite;
+  animation: To-Right 7s linear alternate;
 }
 @keyframes To-Right {
   from {
@@ -159,7 +163,7 @@ body {
   position: absolute;
   inset: -15px;
   border-bottom: 5px solid gray;
-  animation: To-Right 2s linear infinite;
+  animation: To-Right 7s linear alternate;
 }
 @keyframes To-Right {
   from {
@@ -262,7 +266,7 @@ body {
   position: absolute;
   inset: -15px;
   border-bottom: 5px solid gray;
-  animation: To-Right 2s linear infinite;
+  animation: To-Right 7s linear alternate;
 }
 @keyframes To-Right {
   from {
@@ -307,6 +311,7 @@ body {
     text-align: left;
     padding: 0px 40px;
     float: right;
+    vertical-align: bottom;
   }
   #parcour {
     width: 100%;
@@ -325,7 +330,7 @@ body {
     position: absolute;
     inset: -15px;
     border-bottom: 5px solid gray;
-    animation: To-Right 2s linear infinite;
+    animation: To-Right 7s linear alternate;
   }
   @keyframes To-Right {
     from {
@@ -375,7 +380,7 @@ body {
     position: absolute;
     inset: -15px;
     border-bottom: 5px solid gray;
-    animation: To-Right 2s linear infinite;
+    animation: To-Right 7s linear alternate;
   }
   @keyframes To-Right {
     from {
@@ -428,7 +433,7 @@ body {
     position: absolute;
     inset: -15px;
     border-bottom: 5px solid gray;
-    animation: To-Right 2s linear infinite;
+    animation: To-Right 7s linear alternate;
   }
   @keyframes To-Right {
     from {
@@ -478,7 +483,7 @@ body {
     position: absolute;
     inset: -15px;
     border-bottom: 5px solid gray;
-    animation: To-Right 2s linear infinite;
+    animation: To-Right 7s linear alternate;
   }
   @keyframes To-Right {
     from {
@@ -528,7 +533,7 @@ body {
     position: absolute;
     inset: -15px;
     border-bottom: 5px solid gray;
-    animation: To-Right 2s linear infinite;
+    animation: To-Right 7s linear alternate;
   }
   @keyframes To-Right {
     from {
@@ -557,11 +562,16 @@ body {
   }
   #coordonnees h3{
     color: gray;
-    font-size: 20px;
+    font-size: 15px;
     margin: 30px 5px;
   }
   #coordonnees a{
   text-decoration:none;
-  color: rgb(209, 133, 26);
-  font-size: 20px;
+  
+  }
+  #coordonnees span{
+   color: rgb(209, 133, 26); 
+  }
+  #coordonnees i{
+    color: rgb(209, 133, 26);
   }
