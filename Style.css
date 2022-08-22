@@ -525,7 +525,7 @@ body {
     width: 100%;
     height: 35vh;
     margin-left: 40px;
-    padding: 5px 0px;
+    padding: 10px 0px;
     box-sizing: border-box;
     position: relative;
     
@@ -567,7 +567,7 @@ body {
   }
   #coordonnees h3{
     color: rgba(0, 0, 0, 0.777);
-    font-size: 15px;
+    font-size: 20px;
     margin: 10px 5px;
   }
   #coordonnees a{
@@ -580,3 +580,24 @@ body {
   #coordonnees i{
     color: white;
   }
+
+/*************************** Responsive design**************************/
+@media screen and (max-width: 900px){
+  #cvhead{
+    width: 100%;
+  }
+  #section1{
+    width: 100%;
+  }
+  #section2{
+    width: 100%;
+    
+  }
+  #section3{
+    width: 100%;
+  }
+  main{
+    max-width: 1000px;
+    margin: auto;
+  }
+}
