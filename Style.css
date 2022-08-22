@@ -1,0 +1,567 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: sans-serif;
+  margin: 0 20%;
+  padding: 0;
+  box-sizing: border-box;
+}
+/********************************* header ****************************/
+
+#cvhead {
+  display: flex;
+  box-sizing: border-box;
+  background-image: url(img/notebook-computer-chill-relax.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+}
+
+/********************************* image de Profile ****************************/
+.profile {
+  width: 210px;
+  height: 210px;
+  border-radius: 50%;
+  background-color: #ededed;
+  padding: 10px;
+  transition: all 0.2s;
+  margin: 65px 60px;
+}
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  z-index: 10;
+  transition: all 0.3s;
+}
+.profile-details {
+  text-align: center;
+  text-transform: capitalize;
+  transform: translateY(-90%);
+  opacity: 0;
+  transition: all 0.3s;
+}
+.profile-details h3 {
+  font-size: 15px;
+  color: rgb(209, 133, 26);
+}
+.profile-details p {
+  font-size: 15px;
+  margin: 10px 0 10px;
+  color: rgb(82, 82, 82);
+}
+.social-media-list {
+  color: rgb(220, 210, 210);
+  font-size: 20px;
+}
+.profile-details a {
+  margin-right: 10px;
+  color: rgb(82, 82, 82);
+}
+.profile:hover {
+  height: 200px;
+  border-radius: 15px;
+}
+.profile:hover img {
+  width: 200px;
+  height: 150px;
+  padding-left: 6px;
+  border-radius: 15px;
+  transform: translateY(-50%);
+}
+.profile:hover .profile-details {
+  opacity: 1;
+}
+/********************************* NOM&PRENOM ****************************/
+#NOM {
+  margin-top: 80px;
+  margin-left: 10px;
+  color: rgb(220, 210, 210);
+}
+#NOM h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: #ededed;
+}
+/********************************* section1:Profil ****************************/
+#section1 {
+  width: 35%;
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #ededed;
+  text-align: left;
+  padding-left: 30px;
+}
+#profil {
+  width: 90%;
+  height: 45vh;
+  margin-top: 15px;
+  padding: 8px;
+  box-sizing: border-box;
+  position: relative;
+}
+#profil:hover {
+  box-shadow: 0 0 10px gray;
+  transform: translateY(-5%);
+}
+#profil::before {
+  content: "";
+  position: absolute;
+  inset: -15px;
+  border-bottom: 5px solid gray;
+  animation: To-Right 2s linear infinite;
+}
+@keyframes To-Right {
+  from {
+    right: 100%;
+  }
+  t0 {
+    left: 0%;
+  }
+}
+#profil h2 {
+  color: rgb(82, 82, 82);
+  margin: 25px 10px;
+}
+#profil h2::after {
+  content: "";
+  border-bottom: 2px solid rgb(209, 133, 26);
+  width: 45%;
+  margin: 10px auto;
+  margin-left: 20px;
+  display: block;
+}
+#profil h2 > i {
+  color: rgb(209, 133, 26);
+}
+#profil p {
+  padding: 15px 6px;
+}
+/********************************* section1:Langues ****************************/
+#langue {
+  width: 90%;
+  height: 100%;
+  margin-top: 50px;
+  box-sizing: border-box;
+  position: relative;
+}
+#langue:hover {
+  box-shadow: 0 0 10px gray;
+  transform: translateY(-5%);
+}
+#langue::before {
+  content: "";
+  position: absolute;
+  inset: -15px;
+  border-bottom: 5px solid gray;
+  animation: To-Right 2s linear infinite;
+}
+@keyframes To-Right {
+  from {
+    right: 100%;
+  }
+  t0 {
+    left: 0%;
+  }
+}
+#langue h2 {
+  color: rgb(82, 82, 82);
+  margin: 25px 10px;
+  padding-top: 10px;
+}
+#langue h2::after {
+  content: "";
+  border-bottom: 2px solid rgb(209, 133, 26);
+  width: 45%;
+  margin: 10px auto;
+  margin-left: 25px;
+  display: block;
+}
+#langue h2 > i {
+  color: rgb(209, 133, 26);
+}
+#langue li {
+  list-style: none;
+  margin: 10px 0;
+  padding: 10px;
+}
+.bar {
+  background: gray;
+  display: block;
+  height: 20px;
+  border: 1px solid rgb(176, 176, 176);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgb(176, 176, 176);
+  transition: all 0.3s;
+}
+.bar:hover {
+  box-shadow: gray;
+}
+.bar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(150deg, gray 0%, rgb(209, 133, 26) 100%);
+}
+.ARABE {
+  width: 95%;
+  animation: ARABE 3s;
+}
+@keyframes ARABE {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 95%;
+  }
+}
+.FRANÇAIS {
+  width: 70%;
+  animation: FRANÇAIS 3s;
+}
+@keyframes FRANÇAIS {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+.ANGLAIS {
+  width: 60%;
+  animation: ANGLAIS 3s;
+}
+@keyframes ANGLAIS {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+/********************************* section1:Centres D'intérêts ****************************/
+#interet {
+  width: 90%;
+  height: 100%;
+  margin-top: 85px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 5px 15px;
+}
+#interet:hover {
+  box-shadow: 0 0 10px gray;
+  transform: translateY(-5%);
+}
+#interet::before {
+  content: "";
+  position: absolute;
+  inset: -15px;
+  border-bottom: 5px solid gray;
+  animation: To-Right 2s linear infinite;
+}
+@keyframes To-Right {
+  from {
+    right: 100%;
+  }
+  t0 {
+    left: 0%;
+  }
+}
+#interet h2 {
+  color: rgb(82, 82, 82);
+  margin: 5px auto;
+}
+#interet h2::after {
+  content: "";
+  border-bottom: 2px solid rgb(209, 133, 26);
+  width: 45%;
+  margin: 5px auto;
+  margin-left: 25px;
+  display: block;
+}
+#interet h2 > i {
+  color: rgb(209, 133, 26);
+}
+#sport img {
+  width: 100px;
+  height: 70px;
+  border-radius: 20%;
+}
+#sport > h4 {
+  text-decoration: underline;
+  color: rgba(0, 0, 0, 0.561);
+  font-size: 15px;
+  margin-left: 10px;
+}
+/*************************** section2:Parcour **************************/
+#section2 {
+    width: 65%;
+    box-sizing: border-box;
+    display: inline-block;
+    background-color:white;
+    text-align: left;
+    padding: 0px 40px;
+    float: right;
+  }
+  #parcour {
+    width: 100%;
+    height: 65vh;
+    margin-top: 20px;
+    padding: 8px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  #parcour:hover {
+    box-shadow: 0 0 10px gray;
+    transform: translateY(-5%);
+  }
+  #parcour::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    border-bottom: 5px solid gray;
+    animation: To-Right 2s linear infinite;
+  }
+  @keyframes To-Right {
+    from {
+      right: 100%;
+    }
+    t0 {
+      left: 0%;
+    }
+  }
+  #parcour h2 {
+    color: rgb(82, 82, 82);
+    margin: 20px 10px;
+  }
+  #parcour h2::after {
+    content: "";
+    border-bottom: 2px solid rgb(209, 133, 26);
+    width: 45%;
+    margin: 10px auto;
+    margin-left: 20px;
+    display: block;
+  }
+  #parcour h2 > i {
+    color: rgb(209, 133, 26);
+  }
+  #parcour h3{
+    color: gray;
+    margin: 30px 15px;
+  }
+  #parcour span{
+    color:rgba(209, 133, 26, 0.93) ;
+  }
+  /*************************** section2:experience **************************/
+  #experience {
+    width: 100%;
+    height: 65vh;
+    margin-top: 45px;
+    padding: 8px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  #experience:hover {
+    box-shadow: 0 0 10px gray;
+    transform: translateY(-5%);
+  }
+  #experience::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    border-bottom: 5px solid gray;
+    animation: To-Right 2s linear infinite;
+  }
+  @keyframes To-Right {
+    from {
+      right: 100%;
+    }
+    t0 {
+      left: 0%;
+    }
+  }
+  #experience h2 {
+    color: rgb(82, 82, 82);
+    margin: 35px 10px;
+    padding-left: 15px;
+  }
+  #experience h2::after {
+    content: "";
+    border-bottom: 2px solid rgb(209, 133, 26);
+    width: 30%;
+    margin: 10px auto;
+    margin-left: 20px;
+    display: block;
+  }
+  #experience h2 > i {
+    color: rgb(209, 133, 26);
+  }
+  #experience h3{
+    color: gray;
+    font-size: 20px;
+    margin: 30px 5px;
+  }
+  #experience span{
+    color:rgba(209, 133, 26, 0.93) ;
+
+  }
+  /*************************** section2:personnelle **************************/
+  #personnelles {
+    width: 90%;
+    height: 100%;
+    margin-top: 50px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  #personnelles:hover {
+    box-shadow: 0 0 10px gray;
+    transform: translateY(-5%);
+  }
+  #personnelles::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    border-bottom: 5px solid gray;
+    animation: To-Right 2s linear infinite;
+  }
+  @keyframes To-Right {
+    from {
+      right: 100%;
+    }
+    t0 {
+      left: 0%;
+    }
+  }
+  #personnelles h2 {
+    color: rgb(82, 82, 82);
+    margin: 25px 20px;
+    padding-top: 15px;
+  }
+  #personnelles h2::after {
+    content: "";
+    border-bottom: 2px solid rgb(209, 133, 26);
+    width: 45%;
+    margin: 10px auto;
+    margin-left: 25px;
+    display: block;
+  }
+  #personnelles h2 > i {
+    color: rgb(209, 133, 26);
+  }
+  #personnelles h3{
+    color: gray;
+    font-size: 20px;
+    margin: 30px 5px;
+  }
+
+   /*************************** section2:Skills **************************/
+   #skills {
+    width: 90%;
+    height: 100%;
+    margin-top: 50px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    position: relative;
+  }
+  #skills:hover {
+    box-shadow: 0 0 10px gray;
+    transform: translateY(-5%);
+  }
+  #skills::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    border-bottom: 5px solid gray;
+    animation: To-Right 2s linear infinite;
+  }
+  @keyframes To-Right {
+    from {
+      right: 100%;
+    }
+    t0 {
+      left: 0%;
+    }
+  }
+  #skills h2 {
+    color: rgb(82, 82, 82);
+    margin: 25px 15px;
+    padding-top: 15px;
+  }
+  #skills h2::after {
+    content: "";
+    border-bottom: 2px solid rgb(209, 133, 26);
+    width: 25%;
+    margin: 10px auto;
+    margin-left: 10px;
+    display: block;
+  }
+  #skills h2 > i {
+    color: rgb(209, 133, 26);
+  }
+  #skills h3{
+    color: gray;
+    font-size: 20px;
+    margin: 30px 5px;
+  }
+   /*************************** section2:coordonnees**************************/
+   #coordonnees {
+    width: 90%;
+    height: 100%;
+    margin-top: 50px;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    position: relative;
+    
+  }
+  #coordonnees:hover {
+    box-shadow: 0 0 10px gray;
+    transform: translateY(-5%);
+  }
+  #coordonnees::before {
+    content: "";
+    position: absolute;
+    inset: -15px;
+    border-bottom: 5px solid gray;
+    animation: To-Right 2s linear infinite;
+  }
+  @keyframes To-Right {
+    from {
+      right: 100%;
+    }
+    t0 {
+      left: 0%;
+    }
+  }
+  
+  #coordonnees h2 {
+    color: rgb(82, 82, 82);
+    margin: 25px 15px;
+    padding-top: 15px;
+  }
+  #coordonnees h2::after {
+    content: "";
+    border-bottom: 2px solid rgb(209, 133, 26);
+    width: 25%;
+    margin: 10px auto;
+    margin-left: 10px;
+    display: block;
+  }
+  #coordonnees h2 > i {
+    color: rgb(209, 133, 26);
+  }
+  #coordonnees h3{
+    color: gray;
+    font-size: 20px;
+    margin: 30px 5px;
+  }
+  #coordonnees a{
+  text-decoration:none;
+  color: rgb(209, 133, 26);
+  font-size: 20px;
+  }
