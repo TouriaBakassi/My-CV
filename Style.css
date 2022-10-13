@@ -3,7 +3,7 @@ html {
 }
 body {
   font-family: sans-serif;
-  margin: 0 20%;
+  /* margin: 0 20%; */
   padding: 0;
   box-sizing: border-box;
 }
@@ -11,13 +11,36 @@ body {
 
 #cvhead {
   display: flex;
+ 
   box-sizing: border-box;
   background-image: url(img/notebook-computer-chill-relax.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  height: 50vh;
+  background-attachment: fixed;flex-wrap: wrap;
+  /* height: 50vh; */
 }
+@media screen and(max-width: 800px) {
+  
+  #cvhead{
+    /* width: 100%; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .profile{
+    
+    margin: 90px 120px;
+}
+#NOM {
+  margin-left: 40px;
+  
+align-items: center;
+  
+}
+  }
+  
 
 /********************************* image de Profile ****************************/
 .profile {
@@ -94,7 +117,7 @@ body {
 /********************************* section1:Profil ****************************/
 #section1 {
   width: 40%;
-  height: 260vh;
+  height: 270vh;
   box-sizing: border-box;
   display: inline-block;
   text-align: left;
@@ -151,7 +174,7 @@ body {
 /********************************* section1:Langues ****************************/
 #langue {
   width: 90%;
-  height: 80vh;
+  height: 70vh;
   margin-top: 55px;
   box-sizing: border-box;
   position: relative;
@@ -215,7 +238,7 @@ body {
   background: linear-gradient(150deg, gray 0%, rgb(209, 133, 26) 100%);
 }
 .ARABE {
-  width: 95%;
+  width: 80%;
   animation: ARABE 3s;
 }
 @keyframes ARABE {
@@ -223,7 +246,7 @@ body {
     width: 0%;
   }
   100% {
-    width: 95%;
+    width: 80%;
   }
 }
 .FRANÇAIS {
@@ -239,7 +262,7 @@ body {
   }
 }
 .ANGLAIS {
-  width: 60%;
+  width: 50%;
   animation: ANGLAIS 3s;
 }
 @keyframes ANGLAIS {
@@ -247,13 +270,13 @@ body {
     width: 0%;
   }
   100% {
-    width: 60%;
+    width: 50%;
   }
 }
 /********************************* section1:Centres D'intérêts ****************************/
 #interet {
   width: 90%;
-  height: 95vh;
+  height: 85vh;
   margin-top: 60px;
   box-sizing: border-box;
   position: relative;
@@ -320,7 +343,7 @@ body {
   }
   #parcour {
     width: 100%;
-    height: 70vh;
+    height: 75vh;
     margin-top: 50px;
     padding: 8px;
     box-sizing: border-box;
@@ -370,7 +393,7 @@ body {
   /*************************** section2:experience **************************/
   #experience {
     width: 100%;
-    height: 60vh;
+    height: 65vh;
     margin-top: 50px;
     padding: 8px;
     box-sizing: border-box;
@@ -523,31 +546,20 @@ body {
    /*************************** section3:coordonnees**************************/
    #coordonnees {
     width: 100%;
-    height: 35vh;
-    margin-left: 40px;
-    padding: 10px 0px;
+    height: 45vh;
+    margin-top: 10px;
+    padding: 10px ;
     box-sizing: border-box;
-    position: relative;
-    
   }
-  
-  #coordonnees::before {
-    content: "";
-    position: absolute;
-    inset: -15px;
-    border-bottom: 5px solid gray;
-    animation: To-Right 7s linear alternate;
+  #coordonnees ul{
+    margin: 0;
+    padding: 0;
   }
-  @keyframes To-Right {
-    from {
-      right: 100%;
-    }
-    t0 {
-      left: 0%;
-    }
-  }
+ 
   #section3{
     background-color:rgb(209, 133, 26) ;
+  /* height: 40vh; */
+  position: relative;
   }
   #coordonnees h2 {
     color: rgb(82, 82, 82);
@@ -563,7 +575,7 @@ body {
     display: block;
   }
   #coordonnees h2 > i {
-    color: white;
+    color: rgb(209, 133, 26);
   }
   #coordonnees h3{
     color: rgba(0, 0, 0, 0.777);
@@ -575,10 +587,10 @@ body {
   color:rgba(0, 0, 0, 0.777);
   }
   #coordonnees span{
-   color: white; 
+   color: gray; 
   }
   #coordonnees i{
-    color: white;
+    color: rgb(209, 133, 26);
   }
 
 /*************************** Responsive design**************************/
